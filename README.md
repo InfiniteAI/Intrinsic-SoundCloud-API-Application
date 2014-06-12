@@ -3,10 +3,10 @@ Intrinsic-SoundCloud-API-Application
 
 Intrinsic Soundcloud App
 
-    • Title:Intrinsic Soundcloud App
-    • Course:Advanced Scripting for Web and Moble (36-2421) SP
-    • Year:2014 (Senior)
-    • Website Type:Javascript, SC API, HTML5, CSS3, Backbone, Underscore
+    • Title: Intrinsic Soundcloud App
+    • Course: Advanced Scripting for Web and Moble (36-2421) SP
+    • Year: 2014 (Senior)
+    • Website Type: Javascript, SC API, HTML5, CSS3, Backbone, Underscore
 
 Project Requirements:
 
