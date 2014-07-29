@@ -8,30 +8,120 @@
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <script src="js/modernizr.js"></script>
 </head>
 
-<body onload="playSomeMusic('electronic')">
+<body onload="playSomeMusic('deep house')">
   <a name="top"></a>
-  <div class="page">
-    <nav>
-      <ul>
-        <a href="#" onclick="playSomeMusic('alternative')" class="polygon hexagon">♪ Alternative</a>
-        <a href="#" onclick="playSomeMusic('dance')" class="polygon hexagon">♪ Dance</a>
-        <a href="#" onclick="playSomeMusic('reggae')" class="polygon hexagon">♪ Reggae</a>
-        <a href="#" onclick="playSomeMusic('world')" class="polygon hexagon">♪ World</a>
-      </ul>
-    </nav>
-    <section>
+  <div class="navbg">
+    <div class="page">
+      <div class="apptitle">Intrinsic SoundCloud</div>
+      <nav>
+        <table class="features">
+          <tr>
+            <td class="navstyle">
+              <span class="hex" onclick="playSomeMusic('trance')">
+                <div class="content">
+                  <span class="genre"><a href="#" onclick="playSomeMusic('trance')">♪ Trance</a>
+                  </span>
+                </div>
+              </span>
+            </td>
+            <td class="navstyle">
+              <span class="hex" onclick="playSomeMusic('lounge')">
+                <div class="content">
+                  <span class="genre"><a href="#" onclick="playSomeMusic('lounge')">♪ Lounge</a>
+                  </span>
+                </div>
+              </span>
+            </td>
+            <td class="navstyle">
+              <span class="hex" onclick="playSomeMusic('ambient')">
+                <div class="content">
+                  <span class="genre"><a href="#" onclick="playSomeMusic('ambient')">♪ Ambient</a>
+                  </span>
+                </div>
+              </span>
+            </td>
+            <td class="navstyle">
+              <span class="hex" onclick="playSomeMusic('progressive')">
+                <div class="content">
+                  <span class="genre"><a href="#" onclick="playSomeMusic('progressive')">♪ Progressive</a>
+                  </span>
+                </div>
+              </span>
+            </td>
+            <tr>
+        </table>
+      </nav>
+    </div>
+  </div>
+  <div class="navbottom"></div>
+  <div class="explaination">
+    <div class="page">
       <div id="target"></div>
-      <div id="legend">
-        <h4>
-          <img src="svg/mixer.svg" id="icon" onerror="this.onerror=null; this.src='image.png'">
-          <br>Instructions</h4>
-        <h5>• Electronic is the default genre in the above randomizer.</h5>
-        <h5>• The genres can be changed by selecting one of the four categories at the top.</h5>
-        <h5>• A visualizer can be opened below to enjoy while listening to tunes.</h5>
-      </div>
+      <div class="areatitle">Instructions</div>
+      <table class="features">
+        <tr>
+          <td class="blockstyle"><i class="iconstyle fa fa-play-circle-o"></i>
+            <br>
+          </td>
+          <td class="blockstyle"><i class="iconstyle fa fa-th-list"></i>
+            <br>
+          </td>
+          <td class="blockstyle"><i class="iconstyle fa fa-search"></i>
+            <br>
+          </td>
+          <td class="blockstyle"><i class="iconstyle fa fa fa-desktop"></i>
+            <br>
+          </td>
+          <tr>
+      </table>
+      <table class="features">
+        <tr>
+          <td class="blockstyle">
+            <span class="featuretitle">Starting</span>
+            <br>
+          </td>
+          <td class="blockstyle">
+            <span class="featuretitle">Genres</span>
+            <br>
+          </td>
+          <td class="blockstyle">
+            <span class="featuretitle">Searching</span>
+            <br>
+          </td>
+          <td class="blockstyle">
+            <span class="featuretitle">Visualizer</span>
+            <br>
+          </td>
+          <tr>
+      </table>
+      <table class="features">
+        <tr>
+          <td class="block">
+            <span class="featuredetails">Deep House is the default genre in the above randomizer.</span>
+            <br>
+          </td>
+          <td class="block">
+            <span class="featuredetails">The genres can be changed by selecting one of the four categories at the top.</span>
+            <br>
+          </td>
+          <td class="block">
+            <span class="featuredetails">Change songs by clicking the genre buttons if you don't like the current track.</span>
+            <br>
+          </td>
+          <td class="block">
+            <span class="featuredetails">A visualizer can be opened below to enjoy while listening to tunes.</span>
+            <br>
+          </td>
+          <tr>
+      </table>
+    </div>
+  </div>
+  <div class="explaination">
+    <div class="page">
       <div class="toggler">
         <span class="open">
           <h4><i class="fa fa-chevron-down"></i> Click to Open Visualizer</h4>
@@ -40,70 +130,76 @@
           <canvas class='c'>spiral</canvas>
         </div>
       </div>
-    </section>
-    <hr>
-    <h2>Top 5 Deep House Tracks on Soundcloud</h2>
-    <div class='tracks'>
-    <script id='trackTemplate' type='text/template'>
-    <p>
-      playback count: <%= playback_count %>
-      &middot;
-      favoritings count: <%= favoritings_count %>
-    </p>
-    <iframe src="http://w.soundcloud.com/player?url=http://api.soundcloud.com/tracks/<%= id %>" width="100%" frameborder="no">
-    </script>
+      <div class="toptitle">Top 5 Deep House Tracks on SoundCloud</div>
+      <div class='tracks'>
+        <script id='trackTemplate' type='text/template'>
+        <p>
+          playback count: <%= playback_count %>
+          &middot;
+          favoritings count: <%= favoritings_count %>
+        </p>
+      <iframe src="http://w.soundcloud.com/player?url=http://api.soundcloud.com/tracks/<%= id %>" width="100%" frameborder="no">
+      </script>
+      </div>
+      <footer>
+        <table class="footer">
+          <tr>
+            <td class="blockstyle"><i class="headingicon fa fa-cloud-download"></i>
+              <span class="headingtitle">Download App File</span>
+            </td>
+            <td class="blockstyle"><i class=" headingicon fa fa-github-square"></i>
+              <span class="headingtitle">GitHub Project Page</span>
+            </td>
+            <td class="blockstyle"><i class="headingicon fa fa-users"></i>
+              <span class="headingtitle">SoundCloud Sign-Up</span>
+            </td>
+            <td class="blockstyle"><i class="headingicon fa fa-thumbs-up"></i>
+              <span class="headingtitle">Recommended Accounts</span>
+            </td>
+            <tr>
+        </table>
+        <table class="footer">
+          <tr>
+            <td class="footcontent">
+              <a href="downloads/intrinsic.zip">
+                <button class="pure-button pure-button-primary" type="submit" id="randomize"><i class="fa fa-chevron-circle-right"></i> Download Zip</button>
+              </a>
+            </td>
+            <td class="footcontent">
+              <a href="https://github.com/DominicFilipek/Intrinsic-SoundCloud-API-Application">
+                <button class="pure-button pure-button-primary" type="submit" id="randomize"><i class="fa fa-chevron-circle-right"></i> Visit Git Page</button>
+              </a>
+            </td>
+            <td class="footcontent">
+              <a href="https://soundcloud.com/">
+                <button class="pure-button" type="submit" id="randomize"><i class="fa fa-chevron-circle-right"></i> Create Account</button>
+              </a>
+            </td>
+            <td class="footcontent">
+              <a href="https://soundcloud.com/duskymusic" class="pagelink"> • Dusky</a>
+              <br>
+              <a href="https://soundcloud.com/aboveandbeyond" class="pagelink"> • Above & Beyond</a>
+              <br>
+              <a href="https://soundcloud.com/felix-da-housecat" class="pagelink">• Felix Da Housecat</a>
+              <br>
+              <a href="https://soundcloud.com/w00tology" class="pagelink"> • Matt Zo</a>
+              <br>
+              <a href="https://soundcloud.com/andrewbayer" class="pagelink"> • Andrew Bayer</a>
+            </td>
+            <tr>
+        </table>
+        <table class="footer">
+          <tr>
+            <td style="width: 50%;"><a href="#" class="pagelink">© 2014 Dominic</a>
+            </td>
+            <td style="width: 50%; text-align: right;"><a href="#top" class="pagelink"><i class="fa fa-chevron-up"></i> Back to Top</a>
+            </td>
+            <tr>
+        </table>
+      </footer>
     </div>
-    <hr>
-    <footer>
-      <table class="footer">
-        <tr>
-          <td style="width: 33%;"><i class="fa fa-users"></i>
-            <span class="headingtitle"> Sign-Up for SoundCloud</span>
-            <br>
-          </td>
-          <td style="width: 33%;"><i class="fa fa-thumbs-up"></i>
-            <span class="headingtitle"> Recommended Accounts</span>
-            <br>
-          </td>
-          <td style="width: 33%;"><i class="fa fa-cloud-download"></i>
-            <span class="headingtitle"> Download App File</span>
-            <br>
-          </td>
-          <tr>
-      </table>
-      <table class="footer">
-        <tr>
-          <td style="width: 33%;">
-            <a href="https://soundcloud.com/">
-              <button class="pure-button" type="submit" id="randomize"><i class="fa fa-chevron-circle-right"></i> Create Account</button>
-            </a>
-          </td>
-          <td style="width: 33%;">
-            <a href="https://soundcloud.com/duskymusic" class="pagelink"> • Dusky</a>
-            <br>
-            <a href="https://soundcloud.com/aboveandbeyond" class="pagelink"> • Above & Beyond</a>
-            <br>
-            <a href="https://soundcloud.com/felix-da-housecat" class="pagelink">• Felix Da Housecat</a>
-            <br>
-            <a href="https://soundcloud.com/w00tology" class="pagelink"> • Matt Zo</a>
-            <br>
-            <a href="https://soundcloud.com/andrewbayer" class="pagelink"> • Andrew Bayer</a>
-          </td>
-          <td style="width: 33%;">
-            <a href="downloads/intrinsic.zip">
-              <button class="pure-button pure-button-primary" type="submit" id="randomize"><i class="fa fa-chevron-circle-right"></i> Download Zip File</button>
-            </a>
-          </td>
-          <tr>
-      </table>
-      <table class="footer">
-        <tr>
-          <td style="width: 50%;">© 2014 Dominic</td>
-          <td style="width: 50%; text-align: right;"><a href="#top" class="pagelink"><i class="fa fa-chevron-up"></i> Back to Top</a>
-          </td>
-          <tr>
-      </table>
-    </footer>
+  </div>
+  </div>
   </div>
   <script type="text/javascript" src='http://code.jquery.com/jquery-2.0.3.min.js'></script>
   <script type="text/javascript" src='http://underscorejs.org/underscore.js'></script>
