@@ -45,7 +45,11 @@ var tracks = new App.Collections.Tracks();
 tracks.fetch({
   data: {
     format: 'json',
+<<<<<<< HEAD
     client_id: '6fc7b8b965bfe1e3efadc31a932d49ea',
+=======
+    client_id: 'ad93c604ac3543f0ddfdfaa77e9e945c',
+>>>>>>> ba4b9df71b1123a5541c92ecb0dbaa00d93c8deb
     genres: 'deep house',
     order: 'hotness',
     limit: '5'

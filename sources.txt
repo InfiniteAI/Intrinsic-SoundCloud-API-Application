@@ -1,0 +1,26 @@
+﻿
+http://www.iam.colum.edu/students/dominic.filipek/aswm/sc/
+
+
+client_id: 'ad93c604ac3543f0ddfdfaa77e9e945c'
+
+
+show_bpm="true" show_comments="true"
+
+
+
+Sources:
+
+
+http://codepen.io/anon/pen/AtdKa
+
+https://github.com/soundcloud/soundcloud-custom-player/wiki
+
+https://github.com/soundcloud/Widget-JS-API
+
+http://www.techumber.com/2012/11/SoundCloud-Tutorials-Playing-Audio-Files.html
+
+
+https://developers.soundcloud.com/docs/oembed
+
+http://wordpress.org/support/topic/oembed-soundcloud-sets-fixed-width-instead-of-100
